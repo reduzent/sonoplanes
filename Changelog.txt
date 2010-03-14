@@ -1,0 +1,4 @@
+* fadein/out für [instance] abstraction
+* klickfreier loop
+* timeplay modus
+
