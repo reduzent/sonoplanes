@@ -392,6 +392,7 @@
 #X obj 20 22 vsl 10 9 0 127 0 0 \$0.button.sdfdsa \$0.button.r empty
 0 -9 0 10 -228856 -228856 -1 0 1;
 #X obj 83 20 list.selector \$0.inst;
+#X text 37 398 Roman Haefeli \, 2010;
 #X connect 4 0 30 0;
 #X connect 5 0 6 0;
 #X connect 6 0 8 0;

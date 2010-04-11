@@ -800,6 +800,7 @@ your presetfiles in the preset folder: \$1;
 #X obj 25 115 preset.week.day \$0 5;
 #X obj 25 129 preset.week.day \$0 6;
 #X obj 25 143 preset.week.day \$0 0;
+#X text 332 340 Roman Haefeli \, 2010;
 #X connect 2 0 25 0;
 #X connect 23 0 25 1;
 #X connect 25 0 22 0;

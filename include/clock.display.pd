@@ -1,6 +1,6 @@
-#N canvas 0 0 373 405 10;
+#N canvas 0 0 399 393 10;
 #X obj 23 20 hsl 100 28 0 0 0 0 \$0.clock.display.s \$0.clock.display.r
-22:40:12 5 16 0 20 -249661 -249661 -1 0 1;
+01:25:07 5 16 0 20 -249661 -249661 -1 0 1;
 #X obj 45 102 time . . . . . . . . . . .;
 #X obj 224 130 t a a;
 #X obj 256 226 del;
@@ -22,6 +22,7 @@
 #X obj 27 325 pack s s s;
 #X msg 27 349 label \$1:\$2:\$3;
 #X obj 27 371 s \$0.clock.display.r;
+#X text 207 363 Roman Haefeli \, 2010;
 #X connect 1 0 12 1;
 #X connect 1 1 13 1;
 #X connect 1 2 11 0;

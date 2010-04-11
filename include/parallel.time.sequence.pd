@@ -787,4 +787,5 @@
 #X obj 65 20 list.selector \$0.inst.1;
 #X obj 225 20 list.selector \$0.inst.2;
 #X obj 385 20 list.selector \$0.inst.3;
+#X text 515 201 Roman Haefeli \, 2010;
 #X coords 0 -1 1 1 480 14 2 20 20;

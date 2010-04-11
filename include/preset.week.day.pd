@@ -27,7 +27,7 @@
 10 -262144 -1 -1;
 #X obj 88 20 hsl 34 14 1 1 0 0 \$0.blubli \$0.preset.load.r load 4
 7 0 10 -228856 -228856 -1 0 1;
-#X obj 23 20 hsl 60 14 1 1 0 0 \$0.preset.dow.s \$0.preset.dow.r monday
+#X obj 23 20 hsl 60 14 1 1 0 0 \$0.preset.dow.s \$0.preset.dow.r tuesday
 4 7 0 10 -228856 -228856 -1 0 1;
 #N canvas 208 46 806 598 some.stuff 0;
 #N canvas 214 323 195 320 preset.load 0;
@@ -519,4 +519,5 @@ your presetfiles to the folder: \$1;
 #X connect 12 0 13 0;
 #X connect 13 0 14 0;
 #X restore 25 118 pd state.save;
+#X text 318 151 Roman Haefeli \, 2010;
 #X coords 0 -1 1 1 432 14 2 20 20;

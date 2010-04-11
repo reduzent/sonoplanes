@@ -5,18 +5,6 @@
 #X declare -stdpath extra/readanysf~ -lib readanysf~;
 #X declare -stdpath extra/iemlib -lib iemlib;
 #X declare -stdpath extra/ggee -lib ggee;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
-#X declare -stdpath extra/iemguts;
 #N canvas 0 392 581 210 guts 0;
 #X obj 259 21 loadbang;
 #X msg 259 43 dsp 1;
@@ -840,8 +828,9 @@
 0 20 -260064 -260064 -1 0 1;
 #X obj 686 517 hsl 63 28 1 1 0 0 \$0.debug.s \$0.debug.r debug 5 16
 0 20 -228856 -228856 -1 0 1;
+#X text 925 534 Roman Haefeli \, 2010;
 #X restore 19 17 pd CONTROL;
-#N canvas 192 0 826 650 PLAYER 1;
+#N canvas 192 0 796 655 PLAYER 1;
 #X obj 11 329 instance \$0 player5;
 #X obj 11 250 instance \$0 player4;
 #X obj 11 13 instance \$0 player1;
@@ -866,4 +855,4 @@
 #X obj 531 408 instance \$0 player22;
 #X obj 531 487 instance \$0 player23;
 #X obj 531 566 instance \$0 player24;
-#X restore 19 39 pd PLAYER;
+#X restore 18 40 pd PLAYER;
