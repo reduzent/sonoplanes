@@ -830,7 +830,7 @@
 0 20 -228856 -228856 -1 0 1;
 #X text 925 534 Roman Haefeli \, 2010;
 #X restore 19 17 pd CONTROL;
-#N canvas 192 0 796 655 PLAYER 1;
+#N canvas 192 0 884 654 PLAYER 1;
 #X obj 11 329 instance \$0 player5;
 #X obj 11 250 instance \$0 player4;
 #X obj 11 13 instance \$0 player1;
@@ -847,12 +847,6 @@
 #X obj 271 408 instance \$0 player14;
 #X obj 271 487 instance \$0 player15;
 #X obj 271 566 instance \$0 player16;
-#X obj 531 13 instance \$0 player17;
-#X obj 531 92 instance \$0 player18;
-#X obj 531 171 instance \$0 player19;
-#X obj 531 250 instance \$0 player20;
-#X obj 531 329 instance \$0 player21;
-#X obj 531 408 instance \$0 player22;
-#X obj 531 487 instance \$0 player23;
-#X obj 531 566 instance \$0 player24;
+#X obj 531 13 player.live \$0 live1;
+#X obj 530 81 player.walk \$0 walkingplayer1;
 #X restore 18 40 pd PLAYER;
