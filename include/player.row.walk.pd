@@ -61,6 +61,8 @@
 #X obj 1073 225 f;
 #X text 1140 258 this is an ugly hack i dont;
 #X text 1160 270 want to explain;
+#X obj 934 217 r \$1.s\$2.pointer;
+#X msg 934 239 pointer;
 #X connect 0 0 25 0;
 #X connect 1 0 26 0;
 #X connect 2 0 27 0;
@@ -119,13 +121,10 @@
 #X connect 56 0 58 1;
 #X connect 57 0 51 0;
 #X connect 58 0 57 0;
-#X restore 10 58 pd receivers;
-#N canvas 895 99 275 369 audio.player 0;
-#X obj 44 79 adc~ \$2;
-#X obj 44 257 throw~ \$1.\$2.ROUTER;
-#X connect 0 0 1 0;
-#X restore 10 105 pd audio.player;
-#N canvas 0 0 921 426 state.save 0;
+#X connect 61 0 62 0;
+#X connect 62 0 51 0;
+#X restore 9 63 pd receivers;
+#N canvas 85 228 921 426 state.save 0;
 #X obj 18 26 r \$1.MTX;
 #X obj 18 48 route route;
 #X obj 18 70 route \$2;
@@ -177,12 +176,6 @@
 #X connect 7 0 4 1;
 #X restore 27 235 pd seq24;
 #X text 603 11 -----RESET-----------;
-#X obj 602 30 r \$1.MTX;
-#X obj 602 51 route reset;
-#X obj 602 73 b;
-#X obj 602 95 \$2;
-#X msg 602 116 setclear \$1;
-#X obj 602 136 s \$1.MTX;
 #X obj 721 32 r \$1.MTX;
 #X obj 721 231 list trim;
 #X obj 721 253 s \$1.MTX;
@@ -230,10 +223,10 @@
 #X connect 10 1 13 1;
 #X connect 11 0 12 0;
 #X connect 12 0 13 0;
-#X connect 13 0 42 0;
+#X connect 13 0 36 0;
 #X connect 14 0 16 0;
 #X connect 15 0 3 0;
-#X connect 17 0 49 0;
+#X connect 17 0 43 0;
 #X connect 18 0 19 0;
 #X connect 19 0 21 1;
 #X connect 20 0 21 0;
@@ -243,77 +236,122 @@
 #X connect 25 0 21 1;
 #X connect 26 1 22 0;
 #X connect 29 0 10 0;
-#X connect 31 0 32 0;
+#X connect 31 0 35 0;
 #X connect 32 0 33 0;
-#X connect 33 0 34 0;
-#X connect 34 0 35 0;
-#X connect 35 0 36 0;
-#X connect 37 0 41 0;
-#X connect 38 0 39 0;
-#X connect 40 0 48 0;
-#X connect 41 0 40 0;
-#X connect 42 0 14 0;
-#X connect 43 0 44 0;
-#X connect 44 0 38 0;
-#X connect 45 0 46 0;
-#X connect 46 0 47 0;
-#X connect 47 0 43 0;
-#X connect 48 0 45 0;
-#X connect 48 1 47 1;
-#X connect 49 0 20 0;
-#X connect 49 1 18 0;
-#X connect 49 2 25 0;
-#X connect 49 3 50 0;
-#X connect 50 0 25 0;
+#X connect 34 0 42 0;
+#X connect 35 0 34 0;
+#X connect 36 0 14 0;
+#X connect 37 0 38 0;
+#X connect 38 0 32 0;
+#X connect 39 0 40 0;
+#X connect 40 0 41 0;
+#X connect 41 0 37 0;
+#X connect 42 0 39 0;
+#X connect 42 1 41 1;
+#X connect 43 0 20 0;
+#X connect 43 1 18 0;
+#X connect 43 2 25 0;
+#X connect 43 3 44 0;
+#X connect 44 0 25 0;
 #X restore 10 128 pd state.save;
-#X obj 426 11 cnv 15 15 15 empty empty _\$2 20 8 0 10 -233017 -66577
+#X obj 436 11 cnv 15 15 15 empty empty _\$2 20 8 0 10 -233017 -66577
 0;
-#X obj 13 10 hsl 13 17 0 0 0 0 \$1.s\$2.1 \$1.r\$2.1 empty -2 -8 0
+#X obj 23 10 hsl 13 17 0 0 0 0 \$1.s\$2.1 \$1.r\$2.1 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 31 10 hsl 13 17 0 0 0 0 \$1.s\$2.2 \$1.r\$2.2 empty -2 -8 0
+#X obj 41 10 hsl 13 17 0 0 0 0 \$1.s\$2.2 \$1.r\$2.2 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 49 10 hsl 13 17 0 0 0 0 \$1.s\$2.3 \$1.r\$2.3 empty -2 -8 0
+#X obj 59 10 hsl 13 17 0 0 0 0 \$1.s\$2.3 \$1.r\$2.3 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 67 10 hsl 13 17 0 0 0 0 \$1.s\$2.4 \$1.r\$2.4 empty -2 -8 0
+#X obj 77 10 hsl 13 17 0 0 0 0 \$1.s\$2.4 \$1.r\$2.4 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 85 10 hsl 13 17 0 0 0 0 \$1.s\$2.5 \$1.r\$2.5 empty -2 -8 0
+#X obj 95 10 hsl 13 17 0 0 0 0 \$1.s\$2.5 \$1.r\$2.5 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 103 10 hsl 13 17 0 0 0 0 \$1.s\$2.6 \$1.r\$2.6 empty -2 -8 0
+#X obj 113 10 hsl 13 17 0 0 0 0 \$1.s\$2.6 \$1.r\$2.6 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 121 10 hsl 13 17 0 0 0 0 \$1.s\$2.7 \$1.r\$2.7 empty -2 -8 0
+#X obj 131 10 hsl 13 17 0 0 0 0 \$1.s\$2.7 \$1.r\$2.7 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 139 10 hsl 13 17 0 0 0 0 \$1.s\$2.8 \$1.r\$2.8 empty -2 -8 0
+#X obj 149 10 hsl 13 17 0 0 0 0 \$1.s\$2.8 \$1.r\$2.8 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 157 10 hsl 13 17 0 0 0 0 \$1.s\$2.9 \$1.r\$2.9 empty -2 -8 0
+#X obj 167 10 hsl 13 17 0 0 0 0 \$1.s\$2.9 \$1.r\$2.9 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
-#X obj 175 10 hsl 13 17 0 0 0 0 \$1.s\$2.10 \$1.r\$2.10 empty -2 -8
+#X obj 185 10 hsl 13 17 0 0 0 0 \$1.s\$2.10 \$1.r\$2.10 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 193 10 hsl 13 17 0 0 0 0 \$1.s\$2.11 \$1.r\$2.11 empty -2 -8
+#X obj 203 10 hsl 13 17 0 0 0 0 \$1.s\$2.11 \$1.r\$2.11 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 211 10 hsl 13 17 0 0 0 0 \$1.s\$2.12 \$1.r\$2.12 empty -2 -8
+#X obj 221 10 hsl 13 17 0 0 0 0 \$1.s\$2.12 \$1.r\$2.12 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 229 10 hsl 13 17 0 0 0 0 \$1.s\$2.13 \$1.r\$2.13 empty -2 -8
+#X obj 239 10 hsl 13 17 0 0 0 0 \$1.s\$2.13 \$1.r\$2.13 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 247 10 hsl 13 17 0 0 0 0 \$1.s\$2.14 \$1.r\$2.14 empty -2 -8
+#X obj 257 10 hsl 13 17 0 0 0 0 \$1.s\$2.14 \$1.r\$2.14 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 265 10 hsl 13 17 0 0 0 0 \$1.s\$2.15 \$1.r\$2.15 empty -2 -8
+#X obj 275 10 hsl 13 17 0 0 0 0 \$1.s\$2.15 \$1.r\$2.15 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 283 10 hsl 13 17 0 0 0 0 \$1.s\$2.16 \$1.r\$2.16 empty -2 -8
+#X obj 293 10 hsl 13 17 0 0 0 0 \$1.s\$2.16 \$1.r\$2.16 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 301 10 hsl 13 17 0 0 0 0 \$1.s\$2.17 \$1.r\$2.17 empty -2 -8
+#X obj 311 10 hsl 13 17 0 0 0 0 \$1.s\$2.17 \$1.r\$2.17 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 319 10 hsl 13 17 0 0 0 0 \$1.s\$2.18 \$1.r\$2.18 empty -2 -8
+#X obj 329 10 hsl 13 17 0 0 0 0 \$1.s\$2.18 \$1.r\$2.18 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 337 10 hsl 13 17 0 0 0 0 \$1.s\$2.19 \$1.r\$2.19 empty -2 -8
+#X obj 347 10 hsl 13 17 0 0 0 0 \$1.s\$2.19 \$1.r\$2.19 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 355 10 hsl 13 17 0 0 0 0 \$1.s\$2.20 \$1.r\$2.20 empty -2 -8
+#X obj 365 10 hsl 13 17 0 0 0 0 \$1.s\$2.20 \$1.r\$2.20 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 373 10 hsl 13 17 0 0 0 0 \$1.s\$2.21 \$1.r\$2.21 empty -2 -8
+#X obj 383 10 hsl 13 17 0 0 0 0 \$1.s\$2.21 \$1.r\$2.21 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 391 10 hsl 13 17 0 0 0 0 \$1.s\$2.22 \$1.r\$2.22 empty -2 -8
+#X obj 401 10 hsl 13 17 0 0 0 0 \$1.s\$2.22 \$1.r\$2.22 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 409 10 hsl 13 17 0 0 0 0 \$1.s\$2.23 \$1.r\$2.23 empty -2 -8
+#X obj 419 10 hsl 13 17 0 0 0 0 \$1.s\$2.23 \$1.r\$2.23 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X obj 427 10 hsl 13 17 0 0 0 0 \$1.s\$2.24 \$1.r\$2.24 empty -2 -8
+#X obj 437 10 hsl 13 17 0 0 0 0 \$1.s\$2.24 \$1.r\$2.24 empty -2 -8
 0 10 -262144 -262144 -1 0 1;
-#X coords 0 -1 1 1 432 17 2 10 10;
+#X obj 13 10 hsl 5 17 0 0 0 0 \$1.s\$2.pointer \$1.r\$2.pointer empty
+-2 -8 0 10 -249661 -249661 -1 0 1;
+#N canvas 177 18 229 288 pointer.colors 0;
+#X obj 41 9 r \$1.MTX;
+#X obj 41 92 sel 0 1;
+#X obj 41 196 clr.conv;
+#X obj 41 244 s \$1.r\$2.pointer;
+#X msg 41 221 color \$1 \$1 -1;
+#X obj 41 31 route steps;
+#X obj 41 57 >= \$2;
+#X msg 41 172 192 192 192;
+#N canvas 105 329 383 258 mix.color 0;
+#X obj 63 137 + 240;
+#X obj 110 138 + 240;
+#X obj 168 138 + 240;
+#X obj 63 106 * 15;
+#X obj 110 107 * -113;
+#X obj 168 107 * -113;
+#X obj 63 182 pack f f f;
+#X obj 63 44 inlet;
+#X obj 63 66 t a a a;
+#X text 176 65 255 127 127 <-> 240 240 240;
+#X obj 63 204 outlet;
+#X connect 0 0 6 0;
+#X connect 1 0 6 1;
+#X connect 2 0 6 2;
+#X connect 3 0 0 0;
+#X connect 4 0 1 0;
+#X connect 5 0 2 0;
+#X connect 6 0 10 0;
+#X connect 7 0 8 0;
+#X connect 8 0 3 0;
+#X connect 8 1 4 0;
+#X connect 8 2 5 0;
+#X restore 64 141 pd mix.color;
+#X msg 64 118 0;
+#X obj 123 79 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X connect 0 0 5 0;
+#X connect 1 0 7 0;
+#X connect 1 1 9 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 2 0;
+#X connect 9 0 8 0;
+#X connect 10 0 8 0;
+#X restore 10 101 pd pointer.colors;
+#X coords 0 -1 1 1 442 17 2 10 10;
