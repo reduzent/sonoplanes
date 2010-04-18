@@ -254,7 +254,7 @@
 #X connect 43 3 44 0;
 #X connect 44 0 25 0;
 #X restore 10 128 pd state.save;
-#X obj 436 11 cnv 15 15 15 empty empty _\$2 20 8 0 10 -233017 -66577
+#X obj 436 11 cnv 15 15 15 empty empty \$2 20 8 0 10 -233017 -66577
 0;
 #X obj 23 10 hsl 13 17 0 0 0 0 \$1.s\$2.1 \$1.r\$2.1 empty -2 -8 0
 10 -262144 -262144 -1 0 1;
