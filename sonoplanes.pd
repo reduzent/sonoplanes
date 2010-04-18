@@ -863,4 +863,9 @@
 #X obj 11 2304 instance \$0 player30;
 #X obj 271 13 player.live \$0 live1;
 #X obj 271 69 player.walk \$0 walkplayer1;
+#X obj 271 148 player.walk \$0 walkplayer2;
+#X obj 271 227 player.walk \$0 walkplayer3;
+#X obj 271 306 player.walk \$0 walkplayer4;
+#X obj 271 385 player.walk \$0 walkplayer5;
+#X obj 271 464 player.walk \$0 walkplayer6;
 #X restore 18 40 pd PLAYER;
