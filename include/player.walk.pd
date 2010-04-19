@@ -4,29 +4,29 @@
 #X obj 331 76 print DEBUG;
 #X obj 399 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 20 20 cnv 14 254 14 empty \$0.front.label.r \$2 6 8 0 10 -237184
--1 0;
+#X obj 20 20 cnv 14 254 14 empty \$0.front.label.r walkplayer1 6 8
+0 10 -237184 -1 0;
 #X obj 20 35 cnv 14 254 58 empty \$0.front.background.r empty 20 12
 0 14 -237184 -1 0;
 #X obj 28 35 hsl 239 15 0 1 0 0 \$0.front.start.s \$0.front.start.r
 0:00.00 186 8 0 10 -262144 -166441 -1 0 1;
 #X obj 28 58 hsl 239 15 0 1 0 0 \$0.front.end.s \$0.front.end.r 0:00.00
-186 8 0 10 -262144 -166441 -1 23800 1;
+186 8 0 10 -262144 -166441 -1 0 1;
 #X obj 28 73 hsl 60 14 1 1 0 0 \$0.front.prelisten.s \$0.front.prelisten.r
 prelisten 4 7 0 10 -228856 -228856 -1 0 1;
 #X obj 93 73 hsl 52 14 1 1 0 0 \$0.front.stop.s \$0.front.stop.r stop
-7 7 0 10 -228856 -228856 -1 200 1;
+7 7 0 10 -228856 -228856 -1 0 1;
 #X obj 208 73 hsl 59 14 1 1 0 0 \$0.bli \$0.front.length 0:00.00 6
 8 0 10 -228856 -228856 -1 0 1;
 #X obj 28 50 hsl 239 8 0 1 0 0 \$0.bla \$0.front.cursor.r empty 8 8
-0 10 -228856 -228856 -1 9000 1;
+0 10 -228856 -228856 -1 0 1;
 #X obj 150 73 hsl 53 14 1 1 0 0 \$0.front.details.s \$0.front.details.r
 details 7 7 0 10 -228856 -228856 -1 0 1;
 #N canvas 29 0 729 556 matrix.router 0;
 #X obj 27 419 chn.fader \$0 1 \$1;
-#X obj 618 490 namecanvas \$2;
-#X obj 460 420 cnv 14 254 14 empty \$0.front.label.r \$2 6 8 0 10 -237184
--1 0;
+#X obj 618 467 namecanvas \$2;
+#X obj 460 420 cnv 14 254 14 empty \$0.front.label.r walkplayer1 6
+8 0 10 -237184 -1 0;
 #X obj 460 435 cnv 14 254 104 empty \$0.front.background.r empty 20
 12 0 14 -237184 -1 0;
 #X obj 468 473 hsl 60 14 1 1 0 0 \$0.front.prelisten.s \$0.front.prelisten.r
@@ -63,38 +63,38 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X obj 468 435 hsl 239 15 0 1 0 0 \$0.front.start.s \$0.front.start.r
 0:00.00 186 8 0 10 -262144 -166441 -1 0 1;
 #X obj 468 458 hsl 239 15 0 1 0 0 \$0.front.end.s \$0.front.end.r 0:00.00
-186 8 0 10 -262144 -166441 -1 23800 1;
+186 8 0 10 -262144 -166441 -1 0 1;
 #X obj 468 450 hsl 239 8 0 1 0 0 \$0.bla \$0.front.cursor.r empty 8
-8 0 10 -228856 -228856 -1 9000 1;
-#X obj 466 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+8 0 10 -228856 -228856 -1 0 1;
+#X obj 466 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 484 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 484 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 502 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 502 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 520 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 520 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 538 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 538 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 556 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 556 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 574 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 574 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 592 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 592 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 610 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 610 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 628 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 628 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 646 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 646 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 664 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 664 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 682 507 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
+#X obj 682 487 bng 17 250 50 0 \$0.loadfile.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 468 507 hsl 230 17 1 1 0 0 \$0.bli \$0.loadfile.r empty 2 9
+#X obj 468 487 hsl 230 17 1 1 0 0 \$0.bli \$0.loadfile.r empty 2 9
 1 10 -262144 -262144 -1 0 1;
-#X obj 703 507 hsl 5 17 0 0 0 0 \$0.clearfile.s \$0.clearfile.r empty
+#X obj 702 487 hsl 5 17 0 0 0 0 \$0.clearfile.s \$0.clearfile.r empty
 -2 -8 0 10 -262144 -262144 -1 0 1;
 #X obj 17 11 player.row.walk \$0 1;
 #X obj 17 62 player.row.walk \$0 4;
@@ -136,6 +136,10 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 4 8 0 10 -262144 -166441 -1 0 1;
 #X obj 486 299 hsl 221 15 0.1 20 0 0 \$0.fadeout.s \$0.fadeout.r 0.1s
 4 8 0 10 -262144 -166441 -1 0 1;
+#X obj 465 520 cnv 14 244 14 empty empty empty 20 12 0 14 -262144 -1
+0;
+#X symbolatom 465 520 34 0 0 0 - #0.description.r #0.description.s
+;
 #X restore 26 107 pd matrix.router;
 #X obj 223 226 s \$0.MTX;
 #X msg 223 200 reset;
@@ -185,17 +189,16 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X obj 460 414 f;
 #X msg 376 470 ontime \$1;
 #X msg 463 471 delay \$1;
-#X obj 695 383 list;
-#X msg 695 405 symbol \$1;
-#X obj 621 437 list append;
-#X obj 774 406 b;
-#X obj 621 459 route bang;
-#X obj 695 362 route load unload;
-#X msg 688 483 player load \$1;
+#X obj 815 393 list;
+#X msg 815 415 symbol \$1;
+#X obj 741 447 list append;
+#X obj 889 415 b;
+#X obj 741 469 route bang;
+#X obj 815 372 route load unload;
+#X msg 808 493 player load \$1;
 #X obj 248 56 b;
 #X obj 144 338 route endpos startpos fadein fadeout ontime delay player
 ;
-#X obj 562 335 route steps;
 #X obj 536 408 f;
 #X obj 13 338 t b b b b b b b b;
 #X msg 545 470 steps \$1;
@@ -210,6 +213,10 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X obj 560 215 route reset;
 #X msg 493 249 fadein 0.1 \, fadeout 0.1 \, ontime 0.1 \, delay 0.1
 \, steps 1 \, player unload;
+#X obj 616 411 list append;
+#X obj 616 433 sel empty;
+#X msg 616 468 description \$1;
+#X obj 557 344 route steps description;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -221,7 +228,7 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X connect 10 0 14 0;
 #X connect 11 0 13 0;
 #X connect 12 0 15 0;
-#X connect 13 0 56 0;
+#X connect 13 0 55 0;
 #X connect 14 1 19 0;
 #X connect 15 1 20 0;
 #X connect 16 0 17 0;
@@ -250,12 +257,12 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X connect 35 0 25 1;
 #X connect 35 0 26 1;
 #X connect 36 0 33 0;
-#X connect 37 0 62 0;
-#X connect 38 0 61 0;
+#X connect 37 0 61 0;
+#X connect 38 0 60 0;
 #X connect 39 0 16 0;
 #X connect 40 0 16 0;
-#X connect 41 0 60 0;
-#X connect 42 0 59 0;
+#X connect 41 0 59 0;
+#X connect 42 0 58 0;
 #X connect 43 0 16 0;
 #X connect 44 0 16 0;
 #X connect 45 0 46 0;
@@ -274,27 +281,32 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X connect 53 4 41 1;
 #X connect 53 5 42 1;
 #X connect 53 6 50 0;
-#X connect 53 7 54 0;
-#X connect 54 0 55 1;
-#X connect 55 0 58 0;
-#X connect 56 0 47 0;
-#X connect 56 1 10 0;
-#X connect 56 2 37 0;
-#X connect 56 3 38 0;
-#X connect 56 4 41 0;
-#X connect 56 5 42 0;
-#X connect 56 6 12 0;
-#X connect 56 7 55 0;
-#X connect 57 0 16 0;
-#X connect 58 1 57 0;
-#X connect 59 1 44 0;
-#X connect 60 1 43 0;
-#X connect 61 1 40 0;
-#X connect 62 1 39 0;
-#X connect 63 0 67 0;
+#X connect 53 7 70 0;
+#X connect 54 0 57 0;
+#X connect 55 0 47 0;
+#X connect 55 1 10 0;
+#X connect 55 2 37 0;
+#X connect 55 3 38 0;
+#X connect 55 4 41 0;
+#X connect 55 5 42 0;
+#X connect 55 6 12 0;
+#X connect 55 7 54 0;
+#X connect 55 7 67 0;
+#X connect 56 0 16 0;
+#X connect 57 1 56 0;
+#X connect 58 1 44 0;
+#X connect 59 1 43 0;
+#X connect 60 1 40 0;
+#X connect 61 1 39 0;
+#X connect 62 0 66 0;
+#X connect 64 0 65 0;
 #X connect 65 0 66 0;
-#X connect 66 0 67 0;
-#X connect 67 0 64 0;
+#X connect 66 0 63 0;
+#X connect 67 0 68 0;
+#X connect 68 1 69 0;
+#X connect 69 0 16 0;
+#X connect 70 0 54 1;
+#X connect 70 1 67 1;
 #X restore 26 199 pd state.save;
 #N canvas 261 281 434 284 gui.guts 0;
 #N canvas 391 242 435 634 toggle 0;
@@ -1500,6 +1512,65 @@ move your soundfiles to the folder \$1.;
 #X connect 57 0 45 0;
 #X connect 57 0 49 0;
 #X restore 200 13 pd fadein.fadeout.ontime.delay;
+#N canvas 192 128 453 358 description 0;
+#X obj 11 329 s \$0.front.label.r;
+#X obj 11 15 loadbang;
+#X msg 11 303 label \$1;
+#X obj 11 282 makefilename %d;
+#X obj 11 260 route float;
+#X obj 11 115 list append \$2;
+#X obj 153 147 makefilename %c;
+#X obj 153 173 list prepend \$2;
+#X obj 153 195 list append;
+#X msg 153 123 32;
+#X obj 153 103 t b a;
+#X msg 153 216 symbol \$1\$2-\$2\$3;
+#X obj 296 172 s \$0.description.r;
+#X obj 295 11 r \$0.description.s;
+#X msg 296 151 set \$1;
+#X obj 79 14 r \$0.MTX;
+#X obj 79 36 route description;
+#X obj 153 82 list;
+#X obj 296 86 r \$0.MTX;
+#X obj 296 108 route description;
+#X msg 295 33 description \$1;
+#X obj 295 55 s \$0.MTX;
+#X obj 296 130 list;
+#X obj 79 58 route empty;
+#X obj 79 82 b;
+#X obj 306 228 r \$0.MTX;
+#X obj 306 250 route reset;
+#X msg 306 272 description empty;
+#X obj 306 294 s \$0.MTX;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 4 1 2 0;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 11 0;
+#X connect 9 0 6 0;
+#X connect 10 0 9 0;
+#X connect 10 1 8 1;
+#X connect 11 0 4 0;
+#X connect 13 0 20 0;
+#X connect 14 0 12 0;
+#X connect 15 0 16 0;
+#X connect 16 0 23 0;
+#X connect 17 0 10 0;
+#X connect 18 0 19 0;
+#X connect 19 0 22 0;
+#X connect 20 0 21 0;
+#X connect 22 0 14 0;
+#X connect 23 0 24 0;
+#X connect 23 1 17 0;
+#X connect 24 0 5 0;
+#X connect 25 0 26 0;
+#X connect 26 0 27 0;
+#X connect 27 0 28 0;
+#X restore 220 129 pd description;
 #X connect 1 0 2 0;
 #X connect 2 0 10 0;
 #X restore 26 130 pd gui.guts;
