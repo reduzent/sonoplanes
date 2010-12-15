@@ -1,0 +1,103 @@
+2010-04-27  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * sonoplanes.pd: added more walkplayers 
+
+2010-04-21  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * include/line.helper.pd, include/ramp.merger.pd: ramp.merger: zwischenstand 
+
+  * include/line.helper.pd, include/ramp.merger.pd: line.ramp.stuff 
+
+2010-04-19  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * include/line.helper.pd, include/ramp.merger.pd: added:
+  include/line.helper.pd, include/ramp.merger.pd; both yet dysfunctional 
+
+  * include/instance.pd, include/player.live.pd, include/player.walk.pd: made
+  status colors more distinct 
+
+  * include/instance.pd, include/player.live.pd, include/player.walk.pd: Added
+  description to players 
+
+2010-04-18  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * sonoplanes.pd: added some more walkplayers 
+
+  * include/player.row.walk.pd, include/player.walk.pd, sonoplanes.pd:
+  Prerelease for Andres with somehow working walkplayer 
+
+  * include/player.row.walk.pd, include/player.walk.pd: player.walk: do some
+  work work. It basically works - no state saving 
+
+2010-04-13  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * include/parallel.time.sequence.pd, include/serial.time.sequence.pd,
+  include/timed.time.trigger.pd: fixed: wrong target list in time-based
+  event.triggers 
+
+  * include/player.row.walk.pd, include/player.walk.pd: player.walk: made the
+  control part of the walking 
+
+2010-04-12  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * include/player.row.walk.pd, include/player.walk.pd: worked some more on
+  player.walk 
+
+  * include/player.row.walk.pd, include/player.walk.pd: added
+  include/player.walk.pd, include/player.row.walk.pd 
+
+  * include/play.once.pd, sonoplanes.pd: play.once: added list.selector 
+
+2010-04-11  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * include/clock.display.pd, include/instance.pd,
+  include/parallel.loop.sequence.pd, include/parallel.time.sequence.pd,
+  include/preset.week.day.pd, include/preset.week.pd,
+  include/serial.loop.sequence.pd, include/serial.time.sequence.pd,
+  include/timed.loop.trigger.pd, include/timed.time.trigger.pd, sonoplanes.pd:
+  added authorship 
+
+  * include/parallel.loop.sequence.pd, include/parallel.time.sequence.pd,
+  include/serial.loop.sequence.pd, include/serial.time.sequence.pd: added new
+  list.selector to all sequencer abstractions 
+
+  * include/list.selector.field.pd, include/list.selector.pd,
+  include/timed.loop.trigger.pd, include/timed.time.trigger.pd, sonoplanes.pd:
+  include/list.selector.field.pd: added. adapted time.*.trigger.pd to use the
+  new list.selector abstraction 
+
+2010-04-02  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * include/list.selector.pd: include/list.selector.pd: increased frontlevel
+  refresh by 1, since the gop-abs will be displayed within another gop2 
+
+  * include/timed.time.trigger.pd: include/timed.time.trigger.pd: added button
+  for manual triggering 
+
+  * include/timed.loop.trigger.pd: include/timed.loop.trigger.pd: added button
+  for manual triggering 
+
+  * include/gui.daytime.pd, include/gui.mmss.pd: fixed bug: when time value was
+  loaded from preset and one value was changed manually, the others were
+  displayed different from the internal value 
+
+2010-03-14  roman <roman@ba03a363-637e-4ae6-916e-051e55104042>
+
+  * Changelog.txt, Readme.txt, Version.txt, include/bright.ness.pd,
+  include/chn.fader.pd, include/chn.fader.pd.nomatrix,
+  include/clock.display.pd, include/clr.conv.pd, include/eco.mul1~.pd,
+  include/eco.mul2~.pd, include/eco.mul~.pd, include/external.control.pd,
+  include/farb.kreis.pd, include/gui.daytime.pd, include/gui.hhmmss.pd,
+  include/gui.mmss.pd, include/instance.pd, include/mas.fader.pd,
+  include/mas.fader.pd.nomatrix, include/mtx.node~.pd,
+  include/parallel.loop.sequence.pd, include/parallel.time.sequence.pd,
+  include/parent.comm.pd, include/path.is.in.pd, include/play.once.pd,
+  include/player.live.pd, include/player.row.file.pd,
+  include/player.row.live.pd, include/preset.week.day.pd,
+  include/preset.week.pd, include/read.msg.pd, include/readanysf~.pd,
+  include/readmanychsf~.pd, include/resolve.dir.pd, include/root.slash.pd,
+  include/serial.loop.sequence.pd, include/serial.once.pd,
+  include/serial.time.sequence.pd, include/set.color.pd, include/th.row.pd,
+  include/timed.loop.trigger.pd, include/timed.time.trigger.pd, sonoplanes.pd:
+  Initial Release. This is the version already installed and running on the
+  Liestal Computer.    
