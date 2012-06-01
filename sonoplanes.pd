@@ -1,4 +1,4 @@
-#N canvas 0 0 209 256 10;
+#N canvas 0 72 209 256 10;
 #X declare -path include;
 #X declare -stdpath extra/iemmatrix -lib iemmatrix;
 #X declare -stdpath extra/zexy -lib zexy;
@@ -701,7 +701,7 @@
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X restore 20 184 pd guts;
-#N canvas 0 0 1092 565 CONTROL 1;
+#N canvas 0 44 1124 592 CONTROL 1;
 #X obj 5 9 cnv 14 442 141 empty empty master.mixer 6 8 0 10 -237184
 -1 0;
 #X obj 28 25 mas.fader \$0 2;
@@ -828,9 +828,9 @@
 0 20 -260064 -260064 -1 0 1;
 #X obj 686 517 hsl 63 28 1 1 0 0 \$0.debug.s \$0.debug.r debug 5 16
 0 20 -228856 -228856 -1 0 1;
-#X text 925 534 Roman Haefeli \, 2010;
+#X text 925 534 Roman Haefeli \, 2012;
 #X restore 19 17 pd CONTROL;
-#N canvas 192 0 553 592 PLAYER 1;
+#N canvas 192 44 553 592 PLAYER 1;
 #X obj 11 13 instance \$0 player1;
 #X obj 11 92 instance \$0 player2;
 #X obj 11 171 instance \$0 player3;
@@ -886,4 +886,4 @@
 #X obj 271 1728 player.walk \$0 walkplayer22;
 #X obj 271 1807 player.walk \$0 walkplayer23;
 #X obj 271 1886 player.walk \$0 walkplayer24;
-#X restore 18 40 pd PLAYER;
+#X restore 19 39 pd PLAYER;
