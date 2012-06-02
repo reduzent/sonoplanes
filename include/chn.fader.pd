@@ -11,7 +11,7 @@
 0 9 -262144 -162280 -1 6600 1;
 #X msg 367 340 label \$1;
 #X obj 367 361 s \$0.channel.r;
-#X obj 420 314 makefilename %d;
+#X obj 420 314 makefilename %3d;
 #X obj 367 286 sel -100;
 #X msg 367 313 symbol;
 #X obj 299 4 r \$0.reset;
@@ -19,7 +19,7 @@
 #X obj 299 118 s \$0.channel.r;
 #X obj 465 17 loadbang;
 #X obj 167 101 t a a a;
-#X obj 465 70 makefilename %d;
+#X obj 465 70 makefilename %2d;
 #X obj 465 46 \$2;
 #X msg 465 93 label \$1;
 #X obj 465 117 s \$0.label;
