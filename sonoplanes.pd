@@ -702,61 +702,38 @@
 #X connect 1 0 2 0;
 #X restore 20 184 pd guts;
 #N canvas 0 44 1124 592 CONTROL 1;
-#X obj 5 9 cnv 14 442 141 empty empty master.mixer 6 8 0 10 -237184
+#X obj 5 9 cnv 14 442 155 empty empty master.mixer 6 8 0 10 -237184
 -1 0;
-#X obj 28 25 mas.fader \$0 2;
-#X obj 46 25 mas.fader \$0 3;
-#X obj 64 25 mas.fader \$0 4;
-#X obj 82 25 mas.fader \$0 5;
-#X obj 100 25 mas.fader \$0 6;
-#X obj 118 25 mas.fader \$0 7;
-#X obj 136 25 mas.fader \$0 8;
-#X obj 154 25 mas.fader \$0 9;
-#X obj 172 25 mas.fader \$0 10;
-#X obj 190 25 mas.fader \$0 11;
-#X obj 208 25 mas.fader \$0 12;
-#X obj 226 25 mas.fader \$0 13;
-#X obj 244 25 mas.fader \$0 14;
-#X obj 262 25 mas.fader \$0 15;
-#X obj 280 25 mas.fader \$0 16;
 #X obj 298 25 mas.fader \$0 17;
-#X obj 316 25 mas.fader \$0 18;
-#X obj 334 25 mas.fader \$0 19;
-#X obj 352 25 mas.fader \$0 20;
-#X obj 370 25 mas.fader \$0 21;
-#X obj 388 25 mas.fader \$0 22;
-#X obj 406 25 mas.fader \$0 23;
-#X obj 424 25 mas.fader \$0 24;
-#X obj 10 25 mas.fader \$0 1;
-#X obj 5 156 cnv 14 442 51 empty empty group.colors 6 8 0 10 -237184
+#X obj 5 170 cnv 14 442 51 empty empty group.colors 6 8 0 10 -237184
 -1 0;
-#X obj 13 186 hsl 427 14 0 1 0 0 \$0.set.color.s \$0.set.color.r empty
+#X obj 13 200 hsl 427 14 0 1 0 0 \$0.set.color.s \$0.set.color.r empty
 -2 -8 0 10 -228856 -1 -1 0 1;
-#X obj 10 172 set.color \$0 1;
-#X obj 28 172 set.color \$0 2;
-#X obj 46 172 set.color \$0 3;
-#X obj 64 172 set.color \$0 4;
-#X obj 82 172 set.color \$0 5;
-#X obj 100 172 set.color \$0 6;
-#X obj 118 172 set.color \$0 7;
-#X obj 136 172 set.color \$0 8;
-#X obj 154 172 set.color \$0 9;
-#X obj 172 172 set.color \$0 10;
-#X obj 190 172 set.color \$0 11;
-#X obj 208 172 set.color \$0 12;
-#X obj 226 172 set.color \$0 13;
-#X obj 244 172 set.color \$0 14;
-#X obj 262 172 set.color \$0 15;
-#X obj 280 172 set.color \$0 16;
-#X obj 298 172 set.color \$0 17;
-#X obj 316 172 set.color \$0 18;
-#X obj 334 172 set.color \$0 19;
-#X obj 352 172 set.color \$0 20;
-#X obj 370 172 set.color \$0 21;
-#X obj 388 172 set.color \$0 22;
-#X obj 406 172 set.color \$0 23;
-#X obj 424 172 set.color \$0 24;
-#X obj 5 213 preset.week \$0;
+#X obj 10 186 set.color \$0 1;
+#X obj 28 186 set.color \$0 2;
+#X obj 46 186 set.color \$0 3;
+#X obj 64 186 set.color \$0 4;
+#X obj 82 186 set.color \$0 5;
+#X obj 100 186 set.color \$0 6;
+#X obj 118 186 set.color \$0 7;
+#X obj 136 186 set.color \$0 8;
+#X obj 154 186 set.color \$0 9;
+#X obj 172 186 set.color \$0 10;
+#X obj 190 186 set.color \$0 11;
+#X obj 208 186 set.color \$0 12;
+#X obj 226 186 set.color \$0 13;
+#X obj 244 186 set.color \$0 14;
+#X obj 262 186 set.color \$0 15;
+#X obj 280 186 set.color \$0 16;
+#X obj 298 186 set.color \$0 17;
+#X obj 316 186 set.color \$0 18;
+#X obj 334 186 set.color \$0 19;
+#X obj 352 186 set.color \$0 20;
+#X obj 370 186 set.color \$0 21;
+#X obj 388 186 set.color \$0 22;
+#X obj 406 186 set.color \$0 23;
+#X obj 424 186 set.color \$0 24;
+#X obj 5 227 preset.week \$0;
 #X obj 453 9 cnv 14 630 106 empty empty serial.loop.sequencers 6 8
 0 10 -237184 -1 0;
 #X obj 453 233 cnv 14 630 106 empty empty parallel.loop.sequencers
@@ -789,46 +766,69 @@
 #X obj 458 403 parallel.time.sequence \$0 par.seq10;
 #X obj 458 417 parallel.time.sequence \$0 par.seq11;
 #X obj 458 431 parallel.time.sequence \$0 par.seq12;
-#X obj 5 361 cnv 14 226 189 empty empty timed.loop.triggers 6 8 0 10
+#X obj 5 375 cnv 14 226 189 empty empty timed.loop.triggers 6 8 0 10
 -237184 -1 0;
-#X obj 10 377 timed.loop.trigger \$0 1;
-#X obj 237 361 cnv 14 210 189 empty empty timed.time.triggers 6 8 0
+#X obj 10 391 timed.loop.trigger \$0 1;
+#X obj 237 375 cnv 14 210 189 empty empty timed.time.triggers 6 8 0
 10 -237184 -1 0;
-#X obj 10 391 timed.loop.trigger \$0 2;
-#X obj 10 405 timed.loop.trigger \$0 3;
-#X obj 10 419 timed.loop.trigger \$0 4;
-#X obj 10 433 timed.loop.trigger \$0 5;
-#X obj 10 447 timed.loop.trigger \$0 6;
-#X obj 10 461 timed.loop.trigger \$0 7;
-#X obj 10 475 timed.loop.trigger \$0 8;
-#X obj 10 489 timed.loop.trigger \$0 9;
-#X obj 10 503 timed.loop.trigger \$0 10;
-#X obj 10 517 timed.loop.trigger \$0 11;
-#X obj 10 531 timed.loop.trigger \$0 12;
-#X obj 242 377 timed.time.trigger \$0 13;
-#X obj 242 391 timed.time.trigger \$0 14;
-#X obj 242 405 timed.time.trigger \$0 15;
-#X obj 242 419 timed.time.trigger \$0 16;
-#X obj 242 433 timed.time.trigger \$0 17;
-#X obj 242 447 timed.time.trigger \$0 18;
-#X obj 242 461 timed.time.trigger \$0 19;
-#X obj 242 475 timed.time.trigger \$0 20;
-#X obj 242 489 timed.time.trigger \$0 21;
-#X obj 242 503 timed.time.trigger \$0 22;
-#X obj 242 517 timed.time.trigger \$0 23;
-#X obj 242 531 timed.time.trigger \$0 24;
-#X obj 453 501 cnv 14 461 49 empty empty misc.controls 6 8 0 10 -237184
+#X obj 10 405 timed.loop.trigger \$0 2;
+#X obj 10 419 timed.loop.trigger \$0 3;
+#X obj 10 433 timed.loop.trigger \$0 4;
+#X obj 10 447 timed.loop.trigger \$0 5;
+#X obj 10 461 timed.loop.trigger \$0 6;
+#X obj 10 475 timed.loop.trigger \$0 7;
+#X obj 10 489 timed.loop.trigger \$0 8;
+#X obj 10 503 timed.loop.trigger \$0 9;
+#X obj 10 517 timed.loop.trigger \$0 10;
+#X obj 10 531 timed.loop.trigger \$0 11;
+#X obj 10 545 timed.loop.trigger \$0 12;
+#X obj 242 391 timed.time.trigger \$0 13;
+#X obj 242 405 timed.time.trigger \$0 14;
+#X obj 242 419 timed.time.trigger \$0 15;
+#X obj 242 433 timed.time.trigger \$0 16;
+#X obj 242 447 timed.time.trigger \$0 17;
+#X obj 242 461 timed.time.trigger \$0 18;
+#X obj 242 475 timed.time.trigger \$0 19;
+#X obj 242 489 timed.time.trigger \$0 20;
+#X obj 242 503 timed.time.trigger \$0 21;
+#X obj 242 517 timed.time.trigger \$0 22;
+#X obj 242 531 timed.time.trigger \$0 23;
+#X obj 242 545 timed.time.trigger \$0 24;
+#X obj 453 515 cnv 14 461 49 empty empty misc.controls 6 8 0 10 -237184
 -1 0;
-#X obj 563 517 play.once \$0;
 #X obj 563 531 play.once \$0;
-#X obj 458 517 clock.display;
-#X obj 754 517 hsl 85 28 1 1 0 0 \$0.stopall.s \$0.stopall.r stopall
+#X obj 563 545 play.once \$0;
+#X obj 458 531 clock.display;
+#X obj 754 531 hsl 85 28 1 1 0 0 \$0.stopall.s \$0.stopall.r stopall
 5 16 0 20 -261624 -261624 -1 0 1;
-#X obj 844 517 hsl 63 28 1 1 0 0 \$0.reset.s \$0.reset.r reset 5 16
+#X obj 844 531 hsl 63 28 1 1 0 0 \$0.reset.s \$0.reset.r reset 5 16
 0 20 -260064 -260064 -1 0 1;
-#X obj 686 517 hsl 63 28 1 1 0 0 \$0.debug.s \$0.debug.r debug 5 16
+#X obj 686 531 hsl 63 28 1 1 0 0 \$0.debug.s \$0.debug.r debug 5 16
 0 20 -228856 -228856 -1 0 1;
-#X text 925 534 Roman Haefeli \, 2012;
+#X text 925 548 Roman Haefeli \, 2012;
+#X obj 28 25 mas.fader \$0 2;
+#X obj 46 25 mas.fader \$0 3;
+#X obj 64 25 mas.fader \$0 4;
+#X obj 82 25 mas.fader \$0 5;
+#X obj 100 25 mas.fader \$0 6;
+#X obj 118 25 mas.fader \$0 7;
+#X obj 136 25 mas.fader \$0 8;
+#X obj 154 25 mas.fader \$0 9;
+#X obj 172 25 mas.fader \$0 10;
+#X obj 190 25 mas.fader \$0 11;
+#X obj 208 25 mas.fader \$0 12;
+#X obj 226 25 mas.fader \$0 13;
+#X obj 244 25 mas.fader \$0 14;
+#X obj 262 25 mas.fader \$0 15;
+#X obj 280 25 mas.fader \$0 16;
+#X obj 316 25 mas.fader \$0 18;
+#X obj 334 25 mas.fader \$0 19;
+#X obj 352 25 mas.fader \$0 20;
+#X obj 370 25 mas.fader \$0 21;
+#X obj 388 25 mas.fader \$0 22;
+#X obj 406 25 mas.fader \$0 23;
+#X obj 424 25 mas.fader \$0 24;
+#X obj 10 25 mas.fader \$0 1;
 #X restore 19 17 pd CONTROL;
 #N canvas 192 44 553 592 PLAYER 1;
 #X obj 11 13 instance \$0 player1;
