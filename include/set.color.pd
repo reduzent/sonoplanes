@@ -1,6 +1,6 @@
-#N canvas 85 283 291 250 10;
-#X obj 20 22 vsl 18 9 0 0 0 0 \$0.button.s \$0.button.r \$2 4 6 0 10
--262144 -262144 -1 0 1;
+#N canvas 85 283 451 260 10;
+#X obj 20 22 vsl 18 9 0 0 0 0 \$0.button.s \$0.button.r empty 4 6 0
+10 -249661 -249661 -1 0 1;
 #X obj 16 78 route colorchange;
 #X obj 16 99 sel \$2;
 #N canvas 23 165 225 187 getcolor 0;
@@ -35,6 +35,11 @@
 #X msg 160 191 setcolor \$1;
 #X obj 160 213 s \$1.MTX;
 #X obj 162 30 r \$0.button.s;
+#X obj 309 52 loadbang;
+#X obj 309 74 f \$2;
+#X obj 309 96 makefilename %2d;
+#X obj 309 144 s \$0.button.r;
+#X msg 309 119 label \$1;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
@@ -53,4 +58,8 @@
 #X connect 15 0 16 0;
 #X connect 16 0 17 0;
 #X connect 18 0 11 0;
+#X connect 19 0 20 0;
+#X connect 20 0 21 0;
+#X connect 21 0 23 0;
+#X connect 23 0 22 0;
 #X coords 0 -1 1 1 18 14 2 20 20;
