@@ -1652,7 +1652,7 @@ move your soundfiles to the folder \$1.;
 #X obj 230 405 route submixlevel;
 #X obj 230 463 t b b a;
 #X obj 226 597 t b b a;
-#X obj 226 539 route mastermixlevel;
+#X obj 226 539 route mastermixamp;
 #X obj 226 517 r \$1.MTX;
 #X obj 506 232 r \$0.MTX;
 #X obj 506 261 route fadeinnow fadeoutnow;

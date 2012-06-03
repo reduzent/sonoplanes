@@ -1640,7 +1640,7 @@ move your soundfiles to the folder \$1.;
 #X msg 308 147 row \$1 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2
 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2 \$2;
 #X obj 308 182 t b b a;
-#X obj 308 124 route mastermixlevel;
+#X obj 308 124 route mastermixamp;
 #X obj 308 102 r \$1.MTX;
 #N canvas 0 0 230 264 slowing.down 0;
 #X obj 25 119 f;
