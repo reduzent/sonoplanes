@@ -12,7 +12,7 @@
 #X msg 397 321 label \$1;
 #X obj 397 342 s \$0.channel.r;
 #X obj 397 267 sel -100;
-#X msg 397 294 symbol;
+#X msg 397 294 symbol -∞;
 #X msg 299 97 1;
 #X obj 299 118 s \$0.channel.r;
 #X obj 465 17 loadbang;
