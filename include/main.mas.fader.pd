@@ -21,7 +21,7 @@
 #X obj 73 179 t a a;
 #X obj 73 256 list trim;
 #X obj 73 278 s \$1.MTX;
-#X obj 323 320 makefilename %3d;
+#X obj 337 319 makefilename %3d;
 #N canvas 655 161 442 208 state.save 0;
 #X obj 30 13 inlet;
 #X obj 12 78 f;
@@ -52,7 +52,7 @@
 #X restore 294 243 pd state.save;
 #X obj 198 68 s \$0.reset;
 #X obj 198 90 r \$0.reset;
-#X obj 73 234 list prepend mastermainlevellin;
+#X obj 73 234 list prepend mastermainamp;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 1 2 1;

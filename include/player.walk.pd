@@ -1725,7 +1725,7 @@ move your soundfiles to the folder \$1.;
 #X obj 328 224 sel 1;
 #X msg 506 361 1;
 #X obj 567 518 r \$1.MTX;
-#X obj 567 540 route mastermainlevellin;
+#X obj 567 540 route mastermainamp;
 #X obj 506 595 f;
 #X obj 506 618 *;
 #X obj 567 562 t b a;

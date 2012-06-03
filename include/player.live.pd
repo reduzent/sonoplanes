@@ -868,7 +868,7 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X obj 595 283 - 0.1;
 #X floatatom 443 623 5 0 0 0 - - -;
 #X obj 129 381 r \$1.MTX;
-#X obj 129 403 route mastermainlevellin;
+#X obj 129 403 route mastermainamp;
 #X obj 148 458 f;
 #X obj 148 481 *;
 #X obj 129 425 t b b a;
