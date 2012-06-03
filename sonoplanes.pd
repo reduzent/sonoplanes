@@ -1,14 +1,14 @@
-#N canvas 0 100 209 256 10;
+#N canvas 0 44 309 73 10;
 #X declare -path include;
-#X declare -stdpath extra/iemmatrix -lib iemmatrix;
-#X declare -stdpath extra/zexy -lib zexy;
-#X declare -stdpath extra/readanysf~ -lib readanysf~;
-#X declare -stdpath extra/iemlib -lib iemlib;
-#X declare -stdpath extra/ggee -lib ggee;
-#N canvas 0 392 581 210 guts 0;
-#X obj 259 21 loadbang;
-#X msg 259 43 dsp 1;
-#X obj 259 65 s pd;
+#X declare -stdpath extra/iemlib -lib -stdlib extra/iemlib;
+#X declare -stdpath extra/iemmatrix -stdlib extra/iemmatrix;
+#X declare -stdpath extra/zexy -stdlib extra/zexy;
+#X declare -stdpath extra/readanysf~ -stdlib extra/readanysf~;
+#X declare -stdpath extra/ggee -stdlib extra/ggee;
+#N canvas 0 165 309 167 guts 0;
+#X obj 234 14 loadbang;
+#X msg 234 36 dsp 1;
+#X obj 234 58 s pd;
 #N canvas 25 186 205 201 gui.guts 0;
 #N canvas 37 57 450 412 color.choser 0;
 #X obj 13 232 clr.conv;
@@ -625,11 +625,14 @@
 #X restore 4 52 pd store.defaults;
 #N canvas 0 122 637 173 declare 0;
 #X obj 10 12 declare -path include;
-#X obj 10 56 declare -stdpath extra/iemmatrix -lib iemmatrix;
-#X obj 10 78 declare -stdpath extra/zexy -lib zexy;
-#X obj 10 100 declare -stdpath extra/readanysf~ -lib readanysf~;
-#X obj 10 34 declare -stdpath extra/iemlib -lib iemlib;
-#X obj 10 122 declare -stdpath extra/ggee -lib ggee;
+#X obj 10 34 declare -stdpath extra/iemlib -lib -stdlib extra/iemlib
+;
+#X obj 10 56 declare -stdpath extra/iemmatrix -stdlib extra/iemmatrix
+;
+#X obj 10 78 declare -stdpath extra/zexy -stdlib extra/zexy;
+#X obj 10 100 declare -stdpath extra/readanysf~ -stdlib extra/readanysf~
+;
+#X obj 10 122 declare -stdpath extra/ggee -stdlib extra/ggee;
 #X restore 4 96 pd declare;
 #N canvas 488 0 483 275 pathes 0;
 #X obj 83 63 r \$0.MTX;
@@ -698,7 +701,7 @@
 #X restore 5 118 pd stderr;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
-#X restore 20 184 pd guts;
+#X restore 243 17 pd guts;
 #N canvas 0 44 1124 592 CONTROL 1;
 #X obj 5 9 cnv 14 442 155 empty empty master.mixer 6 8 0 10 -237184
 -1 0;
@@ -884,4 +887,4 @@
 #X obj 271 1728 player.walk \$0 walkplayer22;
 #X obj 271 1807 player.walk \$0 walkplayer23;
 #X obj 271 1886 player.walk \$0 walkplayer24;
-#X restore 19 39 pd PLAYER;
+#X restore 19 37 pd PLAYER;
