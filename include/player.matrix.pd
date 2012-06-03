@@ -22,7 +22,7 @@ prelisten 4 7 0 10 -228856 -228856 -1 0 1;
 8 8 0 10 -228856 -228856 -1 0 1;
 #X obj 150 73 hsl 53 14 1 1 0 0 \$0.front.details.s \$0.front.details.r
 details 7 7 0 10 -228856 -228856 -1 0 1;
-#N canvas 150 0 712 552 matrix.router 0;
+#N canvas 150 44 726 566 matrix.router 0;
 #X obj 17 419 chn.fader \$0 1 \$1;
 #X obj 608 476 namecanvas \$2;
 #X obj 450 420 cnv 14 254 14 empty \$0.front.label.r player1 6 8 0
