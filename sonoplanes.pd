@@ -1,4 +1,4 @@
-#N canvas 0 72 209 256 10;
+#N canvas 0 100 209 256 10;
 #X declare -path include;
 #X declare -stdpath extra/iemmatrix -lib iemmatrix;
 #X declare -stdpath extra/zexy -lib zexy;
@@ -573,7 +573,6 @@
 #X obj 376 236 t b a;
 #X msg 353 502 currentpreset <no_preset> \, soundfiles.dir <sonoplanes.install.dir>/sonoplanes_sounds
 \, presets.dir <sonoplanes.install.dir>/sonoplanes_presets;
-#X obj 283 464 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 1 1 2 0;
@@ -623,7 +622,6 @@
 #X connect 46 0 41 0;
 #X connect 46 1 23 0;
 #X connect 47 0 16 0;
-#X connect 48 0 47 0;
 #X restore 4 52 pd store.defaults;
 #N canvas 0 122 637 173 declare 0;
 #X obj 10 12 declare -path include;
