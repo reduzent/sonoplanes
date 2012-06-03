@@ -1,12 +1,12 @@
-#N canvas 668 0 444 279 10;
+#N canvas 745 251 444 279 10;
 #X obj 331 27 r \$0.MTX;
 #X obj 315 47 spigot;
 #X obj 399 32 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 20 20 cnv 14 254 14 empty \$0.front.label.r live1 6 8 0 10 -237184
+#X obj 20 20 cnv 14 254 14 empty \$0.front.label.r live1 6 8 0 10 -208064
 -1 0;
 #X obj 20 35 cnv 14 254 35 empty \$0.front.background.r empty 20 12
-0 14 -237184 -1 0;
+0 14 -208064 -1 0;
 #X obj 28 51 hsl 60 14 1 1 0 0 \$0.front.prelisten.s \$0.front.prelisten.r
 prelisten 4 7 0 10 -228856 -228856 -1 0 1;
 #X obj 93 51 hsl 52 14 1 1 0 0 \$0.front.stop.s \$0.front.stop.r stop
@@ -19,9 +19,9 @@ details 7 7 0 10 -228856 -228856 -1 0 1;
 #X obj 17 419 chn.fader \$0 1 \$1;
 #X obj 605 453 namecanvas \$2;
 #X obj 450 420 cnv 14 254 14 empty \$0.front.label.r live1 6 8 0 10
--237184 -1 0;
+-208064 -1 0;
 #X obj 450 435 cnv 14 254 104 empty \$0.front.background.r empty 20
-12 0 14 -237184 -1 0;
+12 0 14 -208064 -1 0;
 #X obj 458 451 hsl 60 14 1 1 0 0 \$0.front.prelisten.s \$0.front.prelisten.r
 prelisten 4 7 0 10 -228856 -228856 -1 0 1;
 #X obj 523 451 hsl 52 14 1 1 0 0 \$0.front.stop.s \$0.front.stop.r
@@ -674,7 +674,7 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X connect 27 0 28 0;
 #X restore 220 129 pd description;
 #X restore 26 130 pd gui.guts;
-#N canvas 512 251 267 339 signal.guts 0;
+#N canvas 512 279 267 339 signal.guts 0;
 #N canvas 649 82 634 651 matrix.mixer 0;
 #X obj 66 31 catch~ \$0.1.ROUTER;
 #X obj 83 52 catch~ \$0.2.ROUTER;
@@ -867,6 +867,11 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X obj 595 305 max 0;
 #X obj 595 283 - 0.1;
 #X floatatom 443 623 5 0 0 0 - - -;
+#X obj 129 381 r \$1.MTX;
+#X obj 129 403 route mastermainlevellin;
+#X obj 148 458 f;
+#X obj 148 481 *;
+#X obj 129 425 t b b a;
 #X connect 0 0 1 0;
 #X connect 1 0 10 0;
 #X connect 2 0 46 0;
@@ -895,8 +900,8 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X connect 21 0 46 1;
 #X connect 22 0 45 1;
 #X connect 23 0 2 0;
-#X connect 23 1 47 1;
 #X connect 23 1 51 0;
+#X connect 23 1 54 0;
 #X connect 25 0 26 0;
 #X connect 26 0 28 0;
 #X connect 26 1 23 0;
@@ -924,6 +929,13 @@ hide 7 7 0 10 -228856 -228856 -1 0 1;
 #X connect 47 0 7 0;
 #X connect 49 0 37 0;
 #X connect 50 0 49 0;
+#X connect 52 0 53 0;
+#X connect 53 0 56 0;
+#X connect 54 0 55 0;
+#X connect 55 0 47 1;
+#X connect 56 0 20 0;
+#X connect 56 1 54 0;
+#X connect 56 2 55 1;
 #X restore 20 83 pd matrix.manager;
 #X restore 26 153 pd signal.guts;
 #X obj 26 245 external.control \$0 \$1 \$2;
