@@ -588,6 +588,7 @@
 #X connect 47 0 15 0;
 #X connect 48 0 1 0;
 #X connect 48 1 1 0;
+#X connect 48 2 1 0;
 #X restore 4 52 pd store.defaults;
 #N canvas 0 122 637 173 declare 0;
 #X obj 10 12 declare -path include;
