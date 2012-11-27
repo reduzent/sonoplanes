@@ -748,18 +748,18 @@
 8 0 10 -237184 -1 0;
 #X obj 483 345 cnv 14 630 106 empty empty parallel.time.sequencers
 6 8 0 10 -237184 -1 0;
-#X obj 5 375 cnv 14 226 189 empty empty timed.loop.triggers 6 8 0 10
+#X obj 5 389 cnv 14 226 189 empty empty timed.loop.triggers 6 8 0 10
 -237184 -1 0;
-#X obj 483 515 cnv 14 461 49 empty empty misc.controls 6 8 0 10 -237184
+#X obj 483 529 cnv 14 461 49 empty empty misc.controls 6 8 0 10 -237184
 -1 0;
-#X obj 593 531 play.once \$0;
 #X obj 593 545 play.once \$0;
-#X obj 488 531 clock.display;
-#X obj 874 531 hsl 63 28 1 1 0 0 \$0.reset.s \$0.reset.r reset 5 16
+#X obj 593 559 play.once \$0;
+#X obj 488 545 clock.display;
+#X obj 874 545 hsl 63 28 1 1 0 0 \$0.reset.s \$0.reset.r reset 5 16
 0 20 -260064 -260064 -1 0 1;
-#X obj 716 531 hsl 63 28 1 1 0 0 \$0.debug.s \$0.debug.r debug 5 16
+#X obj 716 545 hsl 63 28 1 1 0 0 \$0.debug.s \$0.debug.r debug 5 16
 0 20 -228856 -228856 -1 0 1;
-#X text 955 548 Roman Haefeli \, 2012;
+#X text 955 562 Roman Haefeli \, 2012;
 #X obj 28 25 mas.fader \$0 2;
 #X obj 46 25 mas.fader \$0 3;
 #X obj 64 25 mas.fader \$0 4;
@@ -808,31 +808,31 @@
 #X obj 488 403 parallel.time.sequence \$0 par.seq10;
 #X obj 488 417 parallel.time.sequence \$0 par.seq11;
 #X obj 488 431 parallel.time.sequence \$0 par.seq12;
-#X obj 10 391 timed.loop.trigger \$0 1;
-#X obj 237 375 cnv 14 210 189 empty empty timed.time.triggers 6 8 0
+#X obj 10 405 timed.loop.trigger \$0 1;
+#X obj 237 389 cnv 14 210 189 empty empty timed.time.triggers 6 8 0
 10 -237184 -1 0;
-#X obj 10 405 timed.loop.trigger \$0 2;
-#X obj 10 419 timed.loop.trigger \$0 3;
-#X obj 10 433 timed.loop.trigger \$0 4;
-#X obj 10 447 timed.loop.trigger \$0 5;
-#X obj 10 461 timed.loop.trigger \$0 6;
-#X obj 10 475 timed.loop.trigger \$0 7;
-#X obj 10 489 timed.loop.trigger \$0 8;
-#X obj 10 503 timed.loop.trigger \$0 9;
-#X obj 10 517 timed.loop.trigger \$0 10;
-#X obj 10 531 timed.loop.trigger \$0 11;
-#X obj 10 545 timed.loop.trigger \$0 12;
-#X obj 242 391 timed.time.trigger \$0 13;
-#X obj 242 405 timed.time.trigger \$0 14;
-#X obj 242 419 timed.time.trigger \$0 15;
-#X obj 242 433 timed.time.trigger \$0 16;
-#X obj 242 447 timed.time.trigger \$0 17;
-#X obj 242 461 timed.time.trigger \$0 18;
-#X obj 242 475 timed.time.trigger \$0 19;
-#X obj 242 489 timed.time.trigger \$0 20;
-#X obj 242 503 timed.time.trigger \$0 21;
-#X obj 242 517 timed.time.trigger \$0 22;
-#X obj 242 531 timed.time.trigger \$0 23;
-#X obj 242 545 timed.time.trigger \$0 24;
-#X obj 781 531 global.stop \$0 stopall;
+#X obj 10 419 timed.loop.trigger \$0 2;
+#X obj 10 433 timed.loop.trigger \$0 3;
+#X obj 10 447 timed.loop.trigger \$0 4;
+#X obj 10 461 timed.loop.trigger \$0 5;
+#X obj 10 475 timed.loop.trigger \$0 6;
+#X obj 10 489 timed.loop.trigger \$0 7;
+#X obj 10 503 timed.loop.trigger \$0 8;
+#X obj 10 517 timed.loop.trigger \$0 9;
+#X obj 10 531 timed.loop.trigger \$0 10;
+#X obj 10 545 timed.loop.trigger \$0 11;
+#X obj 10 559 timed.loop.trigger \$0 12;
+#X obj 242 405 timed.time.trigger \$0 13;
+#X obj 242 419 timed.time.trigger \$0 14;
+#X obj 242 433 timed.time.trigger \$0 15;
+#X obj 242 447 timed.time.trigger \$0 16;
+#X obj 242 461 timed.time.trigger \$0 17;
+#X obj 242 475 timed.time.trigger \$0 18;
+#X obj 242 489 timed.time.trigger \$0 19;
+#X obj 242 503 timed.time.trigger \$0 20;
+#X obj 242 517 timed.time.trigger \$0 21;
+#X obj 242 531 timed.time.trigger \$0 22;
+#X obj 242 545 timed.time.trigger \$0 23;
+#X obj 242 559 timed.time.trigger \$0 24;
+#X obj 781 545 global.stop \$0 stopall;
 #X restore 19 17 pd CONTROL;
