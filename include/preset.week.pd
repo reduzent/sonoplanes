@@ -1,5 +1,5 @@
 #N canvas 173 84 498 367 10;
-#N canvas 913 193 272 270 get.presets.path 0;
+#N canvas 913 221 272 270 get.presets.path 0;
 #X obj 84 181 list;
 #X obj 10 205 list append;
 #X obj 84 137 r \$1.MTX;
@@ -676,7 +676,7 @@ your presetfiles in the preset folder: \$1;
 #X connect 44 0 45 0;
 #X restore 10 38 pd state.save.dow;
 #X restore 22 231 pd state.save.week;
-#N canvas 137 43 526 177 load.display 0;
+#N canvas 1136 44 526 177 load.display 0;
 #X obj 15 15 r \$0.MTX;
 #X obj 15 37 route loaddisplay;
 #N canvas 346 168 431 113 loading....... 0;
@@ -745,42 +745,40 @@ your presetfiles in the preset folder: \$1;
 #X connect 19 0 16 1;
 #X connect 20 0 21 0;
 #X restore 21 331 pd parent.comm;
-#X obj 20 20 cnv 14 442 142 empty empty week.preset 6 8 0 10 -237184
+#X obj 20 20 cnv 14 442 156 empty empty week.preset 6 8 0 10 -237184
 -1 0;
-#X obj 163 36 hsl 292 14 1 1 0 0 \$0.preset.file.s \$0.preset.file.r
+#X obj 163 50 hsl 292 14 1 1 0 0 \$0.preset.file.s \$0.preset.file.r
 <no_preset> 4 7 0 10 -249661 -249661 -1 0 1;
-#X obj 64 36 bng 14 250 50 0 \$0.preset.save.s empty empty 17 7 0 10
+#X obj 64 50 bng 14 250 50 0 \$0.preset.save.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 79 36 bng 14 250 50 0 \$0.preset.save.s empty empty 17 7 0 10
+#X obj 79 50 bng 14 250 50 0 \$0.preset.save.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 89 36 bng 14 250 50 0 \$0.preset.save.s empty empty 17 7 0 10
+#X obj 89 50 bng 14 250 50 0 \$0.preset.save.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 67 36 hsl 34 14 1 1 0 0 \$0.blubli.s \$0.preset.save.r save
+#X obj 67 50 hsl 34 14 1 1 0 0 \$0.blubli.s \$0.preset.save.r save
 4 7 0 10 -228856 -228856 -1 0 1;
-#X obj 103 36 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
+#X obj 103 50 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
 0 10 -262144 -1 -1;
-#X obj 118 36 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
+#X obj 117 50 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
 0 10 -262144 -1 -1;
-#X obj 131 36 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
+#X obj 131 50 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
 0 10 -262144 -1 -1;
-#X obj 146 36 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
+#X obj 146 50 bng 14 250 50 0 \$0.preset.saveas.s empty empty 17 7
 0 10 -262144 -1 -1;
-#X obj 106 36 hsl 52 14 1 1 0 0 \$0.blubli.s \$0.preset.saveas.r saveas
-4 7 0 10 -228856 -228856 -1 0 1;
-#X obj 25 36 bng 14 250 50 0 \$0.preset.load.s empty empty 17 7 0 10
+#X obj 25 50 bng 14 250 50 0 \$0.preset.load.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 38 36 bng 14 250 50 0 \$0.preset.load.s empty empty 17 7 0 10
+#X obj 38 50 bng 14 250 50 0 \$0.preset.load.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 49 36 bng 14 250 50 0 \$0.preset.load.s empty empty 17 7 0 10
+#X obj 49 50 bng 14 250 50 0 \$0.preset.load.s empty empty 17 7 0 10
 -262144 -1 -1;
-#X obj 28 36 hsl 34 14 1 1 0 0 \$0.blubli \$0.preset.load.r load 4
+#X obj 28 50 hsl 34 14 1 1 0 0 \$0.blubli \$0.preset.load.r load 4
 7 0 10 -228856 -228856 -1 0 1;
 #X obj 254 268 print WEEK.PRESET;
 #X obj 327 221 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 314 245 DEBUG;
 #X obj 254 244 spigot;
-#N canvas 222 175 267 184 load.today 0;
+#N canvas 222 203 267 184 load.today 0;
 #X obj 19 19 r \$0.MTX;
 #X obj 19 41 route weekpreset.loaded;
 #X obj 19 63 b;
@@ -793,15 +791,30 @@ your presetfiles in the preset folder: \$1;
 #X connect 3 3 4 0;
 #X connect 4 0 5 0;
 #X restore 20 281 pd load.today;
-#X obj 25 59 preset.week.day \$0 1;
-#X obj 25 87 preset.week.day \$0 3;
-#X obj 25 73 preset.week.day \$0 2;
-#X obj 25 101 preset.week.day \$0 4;
-#X obj 25 115 preset.week.day \$0 5;
-#X obj 25 129 preset.week.day \$0 6;
-#X obj 25 143 preset.week.day \$0 0;
-#X text 332 340 Roman Haefeli \, 2010;
-#X connect 2 0 25 0;
-#X connect 23 0 25 1;
-#X connect 25 0 22 0;
-#X coords 0 -1 1 1 442 142 2 20 20;
+#X obj 25 73 preset.week.day \$0 1;
+#X obj 25 101 preset.week.day \$0 3;
+#X obj 25 87 preset.week.day \$0 2;
+#X obj 25 115 preset.week.day \$0 4;
+#X obj 25 129 preset.week.day \$0 5;
+#X obj 25 143 preset.week.day \$0 6;
+#X obj 25 157 preset.week.day \$0 0;
+#X obj 163 36 hsl 292 14 1 1 0 0 \$0.autoweek.preset.s \$0.autoweek.preset.r
+<disabled> 4 7 0 10 -249661 -249661 -1 0 1;
+#X text 332 340 Roman Haefeli \, 2012;
+#X text 24 35 auto.week;
+#X obj 106 50 hsl 52 14 1 1 0 0 \$0.blubli.s \$0.auto.week.enabled.r
+saveas 4 7 0 10 -228856 -228856 -1 0 1;
+#X obj 103 36 bng 14 250 50 0 \$0.auto.week.enable.s empty empty 17
+7 0 10 -262144 -1 -1;
+#X obj 117 36 bng 14 250 50 0 \$0.auto.week.enable.s empty empty 17
+7 0 10 -262144 -1 -1;
+#X obj 131 36 bng 14 250 50 0 \$0.auto.week.enable.s empty empty 17
+7 0 10 -262144 -1 -1;
+#X obj 146 36 bng 14 250 50 0 \$0.auto.week.enable.s empty empty 17
+7 0 10 -262144 -1 -1;
+#X obj 106 36 hsl 52 14 1 1 0 0 \$0.blubli.s \$0.auto.week.enabled.r
+disabled 2 7 0 10 -228856 -228856 -1 0 1;
+#X connect 2 0 24 0;
+#X connect 22 0 24 1;
+#X connect 24 0 21 0;
+#X coords 0 -1 1 1 442 156 2 20 20;
