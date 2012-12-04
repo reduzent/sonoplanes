@@ -1,4 +1,4 @@
-#N canvas 962 44 334 513 10;
+#N canvas 962 44 343 611 10;
 #X obj 88 203 pack f f;
 #X msg 88 225 \$2 \$1;
 #X obj 88 247 -;
@@ -23,7 +23,8 @@
 #X obj 40 50 date . . . . .;
 #X text 88 27 get current ISO week number;
 #X obj 40 15 inlet;
-#X obj 88 446 outlet;
+#X obj 88 484 outlet;
+#X obj 88 461 makefilename %02d;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 13 0;
@@ -43,8 +44,9 @@
 #X connect 14 0 12 0;
 #X connect 15 0 17 0;
 #X connect 16 0 15 0;
-#X connect 17 0 24 0;
+#X connect 17 0 25 0;
 #X connect 21 3 9 0;
 #X connect 21 4 0 1;
 #X connect 21 4 7 0;
 #X connect 23 0 21 0;
+#X connect 25 0 24 0;
