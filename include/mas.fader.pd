@@ -5,7 +5,7 @@
 #X obj 397 161 rmstodb;
 #X obj 397 184 - 100;
 #X obj 397 247 int;
-#X obj 20 22 vsl 18 9 0 0 0 0 \$0.reset \$0.label 20 4 6 0 10 -249661
+#X obj 20 22 vsl 18 9 0 0 0 0 \$0.reset \$0.label  1 4 6 0 10 -249661
 -249661 -1 0 1;
 #X obj 20 50 vsl 18 100 0 1.5 0 0 \$0.channel.s \$0.channel.r   0 2
 9 0 9 -253822 -124831 -1 6600 1;
@@ -69,25 +69,25 @@
 #X obj 12 78 f;
 #X obj 12 34 r \$1.MTX;
 #X obj 12 55 route getpreset;
-#X obj 39 147 list trim;
-#X obj 39 168 s \$1.MTX;
+#X obj 51 148 list trim;
+#X obj 51 169 s \$1.MTX;
 #X obj 127 14 r \$1.MTX;
 #X obj 127 57 route \$2;
-#X obj 12 100 sel 0;
 #X obj 127 35 route lowcutfreq;
-#X obj 39 124 list prepend preset lowcutfreq \$2;
+#X obj 51 125 list prepend preset lowcutfreq \$2;
 #X obj 127 80 outlet;
+#X obj 12 100 sel 0 5;
 #X connect 0 0 1 1;
-#X connect 1 0 8 0;
+#X connect 1 0 11 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
 #X connect 4 0 5 0;
-#X connect 6 0 9 0;
-#X connect 7 0 11 0;
+#X connect 6 0 8 0;
+#X connect 7 0 10 0;
 #X connect 7 0 1 1;
-#X connect 8 1 10 0;
-#X connect 9 0 7 0;
-#X connect 10 0 4 0;
+#X connect 8 0 7 0;
+#X connect 9 0 4 0;
+#X connect 11 2 9 0;
 #X restore 107 92 pd state.save;
 #X obj 170 157 s \$0.filter.r;
 #X obj 21 194 hp4_butt~ 5 200;
